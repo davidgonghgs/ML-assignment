@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # read in all the data
-# df = pd.read_csv(r"wine-quality-white-and-red.csv", sep = ",") # Reading semi-colon-delimited files in Pandas
+# df = pd.read_csv(r"winequality.csv", sep = ",") # Reading semi-colon-delimited files in Pandas
 
 # df.head(20)
 
