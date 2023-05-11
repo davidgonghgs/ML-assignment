@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sb
-
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn import metrics
@@ -121,7 +119,7 @@ sns.heatmap(df.corr(), annot=True);
 
 # we need find some redundant features in our data set, which do not help us increasing the model's performance.
 plt.figure(figsize=(12, 12))
-sb.heatmap(df.corr() > 0.7, annot=True, cbar=False)
+sns.heatmap(df.corr() > 0.7, annot=True, cbar=False)
 plt.show()
 
 # we replace the type, with the 0 and 1, as there are only two categories
